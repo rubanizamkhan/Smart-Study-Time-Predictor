@@ -1,56 +1,39 @@
-# Smart-Study-Time-Predictor
+<h1 style="font-size: 40px;">SMART STUDY TIME PREDICTOR</h1>
 
-A simple Machine Learning project that predicts the number of study hours required based on:
+<h3>A simple Machine Learning project that predicts the number of study hours required based on:</h3>
+Number of chapters<br>
+Difficulty level<br>
+Your previous score<br>
+The project uses Linear Regression from scikit-learn and is designed for 1st-year B. Tech students.<br>
+<h3>FEATURES</h3>
+Predicts how many hours you should study.<br>
+Taking 3 inputs:<br>
+• Chapters<br>
+• Difficulty Level (1–5)<br>
+• Past Score (%)<br>
+Produces a simple and easy-to-understand output.<br>
+Beginner-friendly code without any complex ML concepts<br>
 
-Number of chapters
+<h3>TECH STACK</h3>
+• Python<br>
+• NumPy<br>
+•Scikit-learn (Linear regresssion)<br>
 
-Difficulty level
+<h3>INSTALLATION</h3>
+• install : pip install numpy scikit-learn<br>
 
-Your previous score
-
-The project uses Linear Regression from scikit-learn and is designed for 1st-year B. Tech students.
-
-
-**#FEATURES**
-
-Predicts how many hours you should study.
-
-Taking 3 inputs:
-
-• Chapters
-
-• Difficulty Level (1–5)
-
-• Past Score (%)
-
-Produces a simple and easy-to-understand output. 
-
-Beginner-friendly code without any complex ML concepts
-
-**#TECH STACK**
-
-• Python
-
-• NumPy
-
-•Scikit-learn (Linear regresssion)
-
-**#INSTALLATION**
-
-• install : pip install numpy scikit-learn
-
-**#HOW IT WORKS**
-
-1. A small sample dataset is created inside the program
-2. A Linear Regression model is ttrained on the dataset
-3. User enters :
-   • chapters
-   • difficulty
-   • past score
-4. Model predicts the study hours required
+<h3>HOW IT WORKS</h3>
+1. A small sample dataset is created inside the program<br>
+2. A Linear Regression model is ttrained on the dataset<br>
+3. User enters :<br>
+   • chapters<br>
+   • difficulty<br>
+   • past score<br>
+4. Model predicts the study hours required<br>
    
 
-**#CODE**
+<h3>CODE</h3>
+
 ```python
 #SMART STUDY TIME PREDICTOR
 #Using Linear Regression
@@ -95,7 +78,8 @@ else:
   print("You need strong preparation. Stay consistent!")
 ```
 
-  **#OUTPUT**
+  <h3>OUTPUT</h3>
+  
 ```python
 SMART STUDY TIME PREDICTOR
 
