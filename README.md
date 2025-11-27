@@ -1,5 +1,5 @@
 # Smart-Study-Time-Predictor
-```
+
 A simple Machine Learning project that predicts the number of study hours required based on:
 
 Number of chapters
@@ -9,7 +9,7 @@ Difficulty level
 Your previous score
 
 The project uses Linear Regression from scikit-learn and is designed for 1st-year B. Tech students.
-```
+
 
 **#FEATURES**
 
