@@ -1,0 +1,93 @@
+PROJECT REPORT 
+SMART STUDY TIME PREDICTOR USING MACHINE LEARNING
+
+1. INTODUCTION
+Time management is one the biggest problems for student, studnets struggle to manage their time and decide how many hours they should study for a particular topic. 
+This project uses simple Machine Learning (Linear Regression) to predict the numbers of hours for study based on factors like difficulty, number of chapters and past score.
+This is beginner friendly project
+
+2. OBJECTIVES
+The main of this program involves:
+    To develop a simple and user friendly software collecting basic information.
+    To students to estimate study time more accurately
+    To develop a practical student assistance tool
+    To build a predictive model using python.
+
+3. PROBLEM STATEMENT 
+Students struggle to plan their study schedule because:
+    Some chapters are difficult than other
+    Their previous performance affects the effort needed 
+    They do not have the system to calculate study times
+
+4. SCOPE OF THE PROJECT
+     Suitable for college/school students
+     Useful for making timetable
+     Can be integrated in websites, app or study palnners
+
+5. IMPLEMENTATION
+5.1 Program Structure 
+     Takes number of chapters
+     Difficulty Level
+     Past scores
+
+5.2 Sample code overview 
+#SMART STUDY TIME PREDICTOR
+#Using Linear Regression
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+
+data=np.array([
+    [5,3,60],
+    [8,4,55],
+    [3,2,80],
+    [10,5,50],
+    [7,4,65],
+])
+
+response=np.array([5,8,3,10,7])
+
+model=LinearRegression()
+model.fit(data,response)
+
+print("\n-----------------------------------")
+print("SMART STUDY TIME PREDICTOR")
+print("-----------------------------------")
+
+
+chapter=int(input("Enter number of chapters: "))
+difficulty=int(input("Enter difficulty level (1-5): "))
+past_score=int(input("Enter your previous score (%): "))
+
+input=np.array([[chapter, difficulty, past_score]])
+
+predicted_hour=model.predict(input)[0]
+
+print("\n Suggested Study Time: ")
+print(f"You should study approx: {predicted_hour:.2f} hours")
+
+if predicted_hour<4:
+  print("You need moderate preparation")
+elif predicted_hour<7:
+  print("You need good preparation")
+else:
+  print("You need strong preparation. Stay consistent!")
+
+
+
+6. RESULT 
+
+-----------------------------------
+SMART STUDY TIME PREDICTOR
+-----------------------------------
+Enter number of chapters: 5
+Enter difficulty level (1-5): 3
+Enter your previous score (%): 87
+
+ Suggested Study Time: 
+You should study approx: 5.00 hours
+You need good preparation
+
+
+
+
