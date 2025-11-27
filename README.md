@@ -50,7 +50,7 @@ Beginner-friendly code without any complex ML concepts
    
 
 **#CODE**
-
+```python
 #SMART STUDY TIME PREDICTOR
 #Using Linear Regression
 import numpy as np
@@ -92,11 +92,10 @@ elif predicted_hour<7:
   print("You need good preparation")
 else:
   print("You need strong preparation. Stay consistent!")
-
-
+```
 
   **#OUTPUT**
-
+```python
 SMART STUDY TIME PREDICTOR
 
 Enter number of chapters: 5
@@ -106,6 +105,6 @@ Enter your previous score (%): 87
  Suggested Study Time: 
 You should study approx: 5.00 hours
 You need good preparation
-
+```
 
 
